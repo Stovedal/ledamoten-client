@@ -8,11 +8,16 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Välkommen till LedaMöter</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Här tar du reda på vilket parti du tillhör!
         </p>
+
+        <button className="button" id="vButton"><span>Vänster </span></button>
+        <button className="button" id="hButton"><span>Höger </span></button>
+        <p>Props från KomponentNamn: {this.props.}</p>
+
       </div>
     );
   }
