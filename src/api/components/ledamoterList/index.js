@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Query } from "react-apollo";
+import { Query } from "react-apollo"
 import { GET_LEDAMOTER } from '../../queries'
-import gql from "graphql-tag";
+import gql from "graphql-tag"
+import SwipeContainer from '../../../Components/SwipeContainer'
 
 export default class LedamoterList extends Component {
 
@@ -15,12 +16,7 @@ export default class LedamoterList extends Component {
             console.log(error);
             return <p>Error :(</p>;
             }
-          return data.ledamoter.map((ledamot, index) => (
-            <div key={index}>
-              <img src={ledamot.bild_url_max} style={{height:'100px'}}/>
-              <p>{ledamot.tilltalsnamn + ledamot.efternamn}</p>
-            </div>
-          ));
+          return <SwipeContainer ledamoter={data.ledamoter}/>
         }}
       </Query>
     )
