@@ -7,15 +7,22 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.App-img {
+  height: 100px;
   padding: 20px;
-  color: white;
+  margin: 10px;
+}
+
+.App-header {
+  background-color: #FFFFFF;
+  height: 100px;
+  padding: 20px;
+  color: black;
 }
 
 .App-title {
   font-size: 1.5em;
+  padding: inherit;
 }
 
 .App-intro {
