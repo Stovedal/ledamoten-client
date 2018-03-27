@@ -22,7 +22,6 @@
 .name {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
 
 }
 
@@ -37,8 +36,17 @@
 
 .img {
   height: 50vh;
+
 }
 
+.description {
+  font-weight: lighter;
+  opacity: 0.56;
+  font-size: 14px;
+  padding: 20px;
+  clip: auto;
+  width: 30vh;
+}
 
 @keyframes img-anim {
   from {

@@ -4,6 +4,7 @@ import { bindKeyboard, virtualize } from 'react-swipeable-views-utils';
 import hjartaikon from '../../hjartaikon.jpg';
 import kryssikon from '../../kryssikon.jpg';
 import './styles.css'
+import { description } from '../../assets/descriptions'
 
 const BindKeyboardSwipeableViews = virtualize(SwipeableViews);
 
@@ -99,6 +100,7 @@ const Ledamot = (props) => {
       <div key={props.index} style={styles.slide} className="slide">
         <img src={props.ledamot.bild_url_max} className="img" />
         <p className="name">{props.ledamot.tilltalsnamn}</p>
+        <p className="description">{description()}</p>
         </div>
         <div style={styles.buttonContainer} >
           <div style={styles.button} onClick={()=>props.onTinderButtonClick(false, props.ledamot.parti)}>
@@ -183,8 +185,6 @@ const styles = {
   button: {
     borderRadius: '50%',
     overflow: 'hidden',
-  },
-  resultImg: {
   },
   resultContainer: {
     display: 'flex',
