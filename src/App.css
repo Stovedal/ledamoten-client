@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex:1;
 }
 
 .App-logo {
@@ -7,81 +12,39 @@
   height: 80px;
 }
 
-.App-img {
-  height: 100px;
+.header-img {
   padding: 20px;
-  margin: 10px;
+  height: 10vh;
 }
 
-.App-header {
-  background-color: #FFFFFF;
-  height: 100px;
+.loader-container {
+  display: flex;
+  flex:1;
+  height: 80vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.loader-text {
   padding: 20px;
-  color: black;
-}
+  color:  #FE6060;
 
-.App-title {
-  font-size: 1.5em;
-  padding: inherit;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-.button {
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+
+
+body {
+  font-family: 'Anton', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
-#hButton {
-  border-radius: 4px;
-  background-color: #4CAF50;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+@font-face {
+    font-family: Anton;
+    src: url('https://fonts.googleapis.com/css?family=Anton');
 }

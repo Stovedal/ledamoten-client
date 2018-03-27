@@ -1,0 +1,58 @@
+
+.tinder-button {
+  height: 75px;
+  margin: 20px;
+}
+
+.tinder-button:hover {
+  animation: button-anim 1 0.1s linear;
+  height: 80px;
+}
+
+.slide {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  margin: 20px;
+  animation: img-anim 1 0.5s linear;
+  overflow: hidden;
+
+}
+
+.name {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+}
+
+.again-button {
+  text-decoration: none;
+  padding: 20px 40px;
+  border: 3px solid #FE6060;
+  border-radius: 40px;
+  color:  #FE6060;
+
+}
+
+.img {
+  height: 50vh;
+}
+
+
+@keyframes img-anim {
+  from {
+    opacity: 0;
+   }
+  to {
+    opacity: 1;
+   }
+}
+
+@keyframes button-anim {
+  from {
+    height: 75px;
+   }
+  to {
+    height: 80px;
+   }
+}
