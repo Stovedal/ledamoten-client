@@ -7,6 +7,8 @@
 .tinder-button:hover {
   animation: button-anim 1 0.1s linear;
   height: 80px;
+  margin: 17.5px;
+  cursor: pointer;
 }
 
 .slide {
@@ -15,7 +17,6 @@
   margin: 20px;
   animation: img-anim 1 0.5s linear;
   overflow: hidden;
-
 }
 
 .name {
@@ -51,8 +52,10 @@
 @keyframes button-anim {
   from {
     height: 75px;
+    margin: 20px;
    }
   to {
     height: 80px;
+    margin: 17.5px;
    }
 }

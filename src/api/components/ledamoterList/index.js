@@ -15,8 +15,8 @@ export default class LedamoterList extends Component {
         {({ loading, error, data }) => {
           if (loading) return (
             <div className="loader-container">
-            <ClipLoader size={56} color={'#FE6060'} loading={true} />
-            <p className="loader-text">Hämtar ledamöter...</p>
+              <ClipLoader size={56} color={'#FE6060'} loading={true} />
+              <p className="loader-text">Hämtar ledamöter...</p>
             </div>
           )
           if (error) {
