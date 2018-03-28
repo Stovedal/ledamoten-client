@@ -110,6 +110,8 @@ const Ledamot = (props) => {
             <img src={hjartaikon} style={styles.button} className="tinder-button" alt="hjartaikon" />
           </div>
         </div>
+        <a className="again-button" href="javascript:history.go(0)">IGEN!</a>
+
       </div>
     )
   }
@@ -171,8 +173,6 @@ const getPartyImg = (letter) => {
 }
 
 const styles = {
-
-
   buttonContainer: {
     display: 'flex',
     flex:1,
@@ -199,5 +199,4 @@ const styles = {
   match: {
     height:'15vh'
   }
-
 };

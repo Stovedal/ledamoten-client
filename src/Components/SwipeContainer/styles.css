@@ -31,7 +31,11 @@
   border: 3px solid #FE6060;
   border-radius: 40px;
   color:  #FE6060;
+}
 
+.again-button:hover {
+  animation: again-button-anim 1 0.1s linear;
+  padding: 22px 44px;
 }
 
 .img {
@@ -47,6 +51,16 @@
   clip: auto;
   width: 30vh;
 }
+
+@keyframes again-button-anim {
+  from {
+    padding: 20px 40px;
+  }
+  to {
+    padding: 22px 44px;
+  }
+}
+
 
 @keyframes img-anim {
   from {
