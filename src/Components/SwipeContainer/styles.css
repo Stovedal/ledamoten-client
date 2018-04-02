@@ -17,11 +17,14 @@
   margin: 20px;
   animation: img-anim 1 0.5s linear;
   overflow: hidden;
+  height: 50vh;
+  min-height: 300px;
+  min-width: 200px;
+  width: 40vh;
 }
 
 .name {
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: center;
 
 }
 
@@ -39,17 +42,29 @@
 }
 
 .img {
-  height: 50vh;
-
+  width: 100%;
+  height: 50%;
 }
 
 .description {
   font-weight: lighter;
   opacity: 0.56;
   font-size: 14px;
-  padding: 20px;
   clip: auto;
-  width: 30vh;
+  grid-row: 3;
+  text-align: center;
+  width: 100%;
+}
+
+.counter {
+  opacity: 0.37;
+  font-weight: lighter;
+}
+
+.ledamot-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @keyframes again-button-anim {

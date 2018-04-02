@@ -83,7 +83,10 @@ export default class SwipeContainer extends Component {
   render(){
     if(this.state.index<this.props.ledamoter.length){
       return(
-        <Ledamot onTinderButtonClick={this.onTinderButtonClick.bind(this)} ledamot={this.props.ledamoter[this.state.index]} index={this.state.index}/>
+        <div>
+          <p className="counter">{this.state.index+1} / {this.props.ledamoter.length}</p>
+          <Ledamot onTinderButtonClick={this.onTinderButtonClick.bind(this)} ledamot={this.props.ledamoter[this.state.index]} index={this.state.index}/>
+        </div>
       )
     } else {
       return <Result results={this.getResult()}/>
@@ -96,12 +99,12 @@ export default class SwipeContainer extends Component {
 const Ledamot = (props) => {
   if(props.ledamot!==undefined) {
     return(
-      <div>
+      <div className="ledamot-container">
       <div key={props.index} style={styles.slide} className="slide">
-        <img src={props.ledamot.bild_url_max} className="img" />
+        <div style={{'backgroundImage': 'url(' + props.ledamot.bild_url_max +')', ...styles.image}}  />
         <p className="name">{props.ledamot.tilltalsnamn}</p>
         <p className="description">{description()}</p>
-        </div>
+      </div>
         <div style={styles.buttonContainer} >
           <div style={styles.button} onClick={()=>props.onTinderButtonClick(false, props.ledamot.parti)}>
             <img src={kryssikon} style={styles.button} className="tinder-button" alt="kryssikon" />
@@ -110,7 +113,6 @@ const Ledamot = (props) => {
             <img src={hjartaikon} style={styles.button} className="tinder-button" alt="hjartaikon" />
           </div>
         </div>
-        <a className="again-button" href="javascript:history.go(0)">IGEN!</a>
 
       </div>
     )
@@ -175,10 +177,9 @@ const getPartyImg = (letter) => {
 const styles = {
   buttonContainer: {
     display: 'flex',
-    flex:1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     height: '90px',
     width: '40vh',
   },
@@ -198,5 +199,12 @@ const styles = {
   },
   match: {
     height:'15vh'
+  },
+  image: {
+    height: '60%',
+    backgroundPosition: 'center',
+    resizeMode: 'contain',
+    backgroundSize: '100%',
+    backgroundRepeat: 'no repeat',
   }
 };
