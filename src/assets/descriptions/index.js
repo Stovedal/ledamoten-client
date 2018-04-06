@@ -16,4 +16,7 @@ const descriptions = [
   "Jag är en aktiv person som älskar träning. Att vara med att påverka Sverige till det bättre är en bra pulshöjare ;)"
   ,
   "Vad är väl en bal på slottet om man istället kunde ta ett gott glas vin tillsammans med dig :*"
+  ,
+  "Jag brinner för IT-säkerhet, vi kanske kan nörda lite tillsammans."
+  
 ]
