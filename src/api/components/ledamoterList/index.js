@@ -9,7 +9,7 @@ import 'react-loading-bar/dist/index.css'
 export default class LedamoterList extends Component {
 
   render(){
-    let nr = 32;
+    let nr = 16;
     return (
       <Query query={GET_LEDAMOTER} variables={{nr}}>
         {({ loading, error, data }) => {
